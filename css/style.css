@@ -27,14 +27,15 @@ body {
 }
 .header {
   margin: auto;
-  padding-bottom: 147px;
+  padding-bottom: 115px;
   background-image: url(../images/banner-bg.jpg);
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
-  height: 450px;
+  min-height: 450px;
+  height: 100%;
 }
 .header:after {
   content: "";
@@ -127,6 +128,7 @@ body {
   z-index: 2;
   margin: auto;
   margin-top: 100px;
+  height: 100%;
 }
 /*HEADER КОНЕЦ*/
 
@@ -155,10 +157,12 @@ body {
 
 .trends {
   display: flex;
+  height: 100%;
 }
 
 .card-trend {
   min-height: 320px;
+  height: 100%;
   width: 24.85%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -205,7 +209,7 @@ body {
   z-index: 2;
   border: 3px solid #b59f5b;
   text-transform: uppercase;
-
+  height: 100%;
   padding-top: 38px;
   padding-bottom: 28px;
   padding-left: 28px;
@@ -231,15 +235,22 @@ body {
 }
 .content {
   max-width: 1200px;
+  height: 100%;
   padding: 0 15px;
   display: flex;
   justify-content: space-between;
   margin: auto;
   margin-top: 60px;
 }
-
+.main {
+  height: 100%;
+}
+.cards {
+  height: 100%;
+}
 .card {
   display: flex;
+  height: 100%;
 }
 .card:nth-child(n + 2) {
   margin-top: 60px;
@@ -251,6 +262,7 @@ body {
   margin-right: 118px;
   margin-left: 28px;
   width: 100%;
+  height: 100%;
 }
 .card-tag {
   font-weight: bold;
@@ -296,6 +308,7 @@ body {
   font-size: 15px;
   line-height: 22px;
   color: #0f0d0e;
+  height: 100%;
 }
 .last-post3-text {
   margin-top: 10px;
@@ -306,8 +319,11 @@ body {
 .aside {
   max-width: 270px;
   margin-left: 15px;
+  height: 100%;
 }
-
+.new-posts-box {
+  height: 100%;
+}
 .new-posts {
   text-align: center;
   font-weight: bold;
@@ -328,6 +344,7 @@ body {
 .card-little {
   max-width: 270px;
   display: flex;
+  height: 100%;
 }
 .card-little:nth-child(n + 2) {
   margin-top: 17px;
@@ -338,6 +355,7 @@ body {
 }
 .info-aside {
   margin-left: 19px;
+  height: 100%;
 }
 .card-date {
   margin-bottom: 5-px;
@@ -865,7 +883,8 @@ body {
     background-size: cover;
     position: relative;
     z-index: 1;
-    height: 392px;
+    min-height: 392px;
+    height: 100%;
   }
 
   .menu__button {
@@ -889,12 +908,13 @@ body {
 
   .heading {
     font-size: 40px;
-    padding-bottom: 120px;
+    
     width: 611px;
     position: relative;
     z-index: 3;
     line-height: 55px;
     margin-top: 83px;
+    height: 100%;
   }
 
   .header-logo {
@@ -1278,7 +1298,8 @@ body {
 
   .header {
     background: url(../images/banner-mobile.jpg) no-repeat center center / cover;
-    height: 640px;
+    min-height: 640px;
+    height: 100%;
     padding: 0 15px;
     display: flex;
     align-items: center;
@@ -1317,6 +1338,7 @@ body {
     top: 220px;
     right: 0;
     left: 0;
+    height: 100%;
   }
 
   .header-logo {
